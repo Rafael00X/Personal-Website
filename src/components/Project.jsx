@@ -8,27 +8,27 @@ const projects = [
     }
 ]
 
-function projectItem(item, index) {
-    return (
-        <div className="project-item" key={index}>
-            <h4>{item.name}</h4>
-            <p>{item.description}<br/></p>
-            <a href={item.link} target="_blank">{item.link}</a>
-        </div>
-    )
-}
-
 function Project() {
     return (
         <section id="project">
             <div className="display">
             <h2>Projects</h2>
             <hr/>
-            {projects.map((item, index) => projectItem(item, index))}
+            {projects.map((item, index) => <ProjectItem key={index} item={item} />)}
             <a className="button btn" href="https://github.com/Rafael00X/" target="_blank">Github</a>
             </div>
         </section>
     );
+}
+
+function ProjectItem(props) {
+    return (
+        <div className="project-item">
+            <h4>{props.item.name}</h4>
+            <p>{props.item.description}<br/></p>
+            <a href={props.item.link} target="_blank">{props.item.link}</a>
+        </div>
+    )
 }
 
 export default Project;

@@ -25,31 +25,6 @@ const exp = [
     }
 ]
 
-function Item(item, index) {
-    //<i className="fas fa-briefcase timeline-icon"></i>  // For work
-    //<i className="fas fa-graduation-cap timeline-icon"></i>  // For education
-    return (
-        <li className="outer-list" key={index}>
-            <div className="timeline-item">
-                <div className="dot">
-                    {item.type === "edu" && <i className="fas fa-graduation-cap timeline-icon"></i>}
-                    {item.type === "work" && <i className="fas fa-briefcase timeline-icon"></i>}
-                </div>
-                <div className="date">
-                    <p>{item.start} - {item.end}</p>
-                </div>
-                
-                <div className="content">
-                    <h4>{item.role} - {item.institute}</h4>
-                    <ul className="inner-list">
-                        {item.content.map((text, index) =>  <li className="inner-list" key={index}>{text}</li>)}
-                    </ul>
-                </div>
-            </div>
-        </li>
-    );
-}
-
 function Experience() {
     return (
         <section id="experience">
@@ -59,11 +34,34 @@ function Experience() {
             <div className="exp-container">
                 <span className="timeline"></span>
                 <ul className="outer-list">
-                    {exp.map((item, index) => Item(item, index))}
+                    {exp.map((item, index) => <ExperienceItem key={index} item={item} />)}
                 </ul>
             </div>
             </div>
         </section>
+    );
+}
+
+function ExperienceItem(props) {
+    return (
+        <li className="outer-list">
+            <div className="timeline-item">
+                <div className="dot">
+                    {props.item.type === "edu" && <i className="fas fa-graduation-cap timeline-icon"></i>}
+                    {props.item.type === "work" && <i className="fas fa-briefcase timeline-icon"></i>}
+                </div>
+                <div className="date">
+                    <p>{props.item.start} - {props.item.end}</p>
+                </div>
+                
+                <div className="content">
+                    <h4>{props.item.role} - {props.item.institute}</h4>
+                    <ul className="inner-list">
+                        {props.item.content.map((text, index) =>  <li className="inner-list" key={index}>{text}</li>)}
+                    </ul>
+                </div>
+            </div>
+        </li>
     );
 }
 
