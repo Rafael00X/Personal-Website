@@ -10,6 +10,7 @@ body {
 
 a, a:hover {
     color: #11999E;
+    text-decoration: none;
 }
 
 b {
@@ -185,23 +186,25 @@ section {
     background-color: #303030;;
 }
 
-#contacts a, #contacts a:hover {
-    color: #BBBBBB;
-    margin-left: 30px;
+#contacts a, #contacts hr {
+    color: #999999;
 }
 
-#contacts h2 {
-    color: #DDDDDD;
+#contacts a:hover {
+    color: #EFEFEF;
 }
 
-#contacts hr {
-    color: #BBBBBB;
+.contact-item {
+    margin: 30px 0;
+    text-align: center;
 }
 
-#contacts .fa-icon {
-    color: #BBBBBB;
+.fa-icon {
+    font-size: 2rem;
+    height: 35px;
+    width: 35px;
+    text-align: center;
 }
-
 
 /* ##### Media Queries ##### */
 

@@ -15,7 +15,7 @@ function Project() {
             <h2>Projects</h2>
             <hr/>
             {projects.map((item, index) => <ProjectItem key={index} item={item} />)}
-            <a className="button btn" href="https://github.com/Rafael00X/" target="_blank">Github</a>
+            <a className="button btn" href="https://github.com/Rafael00X/" target="Rafael00X_github_page">Github</a>
             </div>
         </section>
     );
@@ -26,7 +26,7 @@ function ProjectItem(props) {
         <div className="project-item">
             <h4>{props.item.name}</h4>
             <p>{props.item.description}<br/></p>
-            <a href={props.item.link} target="_blank">{props.item.link}</a>
+            <a href={props.item.link} target="Rafael00X_github_page">{props.item.link}</a>
         </div>
     )
 }

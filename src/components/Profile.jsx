@@ -16,7 +16,7 @@ function Profile() {
                 <span><b>Location:</b>&nbsp;&nbsp; Gayeshpur, West Bengal, India</span><br/>
                 <span><b>Interests:</b>&nbsp;&nbsp; Coding, Cooking, Boxing</span><br/><br/>
             </p>
-            <a className="button btn" href="" target="_blank">Resume</a>
+            <a className="button btn" href="" target="resume">Resume</a>
             </div>
         </section>
     );
