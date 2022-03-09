@@ -4,12 +4,13 @@
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-weight: 300;
 }
 
-a, a:hover {
-    color: #11999E;
+a,
+a:hover {
+    color: #11999e;
     text-decoration: none;
 }
 
@@ -18,16 +19,16 @@ b {
 }
 
 h2 {
-    color: #66BFBF;
+    color: #66bfbf;
     font-size: 3rem;
     font-weight: 300;
     line-height: 3.5rem;
     margin: 80px;
-    text-align: center;    
+    text-align: center;
 }
 
 h3 {
-    color: #11999E;
+    color: #11999e;
     text-align: left;
     margin: 20px 0;
     font-size: 1.7rem;
@@ -38,11 +39,12 @@ section {
     padding: 15px 0 30px 0;
 }
 
-.button, .button:hover {
-    background-color: #11999E;
+.button,
+.button:hover {
+    background-color: #11999e;
     border-radius: 7%;
-    border: 1px solid #11999E;
-    color: #FFFFFF;
+    border: 1px solid #11999e;
+    color: #ffffff;
     padding: 7px;
 }
 
@@ -76,11 +78,10 @@ section {
     text-align: left;
 }
 
-
 /* ##### Education and Experience ##### */
 
 #experience {
-    background-color: #EFEFEF;
+    background-color: #efefef;
 }
 
 #experience li.inner-list {
@@ -102,7 +103,7 @@ section {
 }
 
 .dot {
-    background-color: #11999E;
+    background-color: #11999e;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -118,11 +119,11 @@ section {
 }
 
 .timeline {
-    background-color: #11999E;
+    background-color: #11999e;
     width: 3px;
     margin-top: 25px;
     height: 100%;
-    height: calc(100% - 25px);    
+    height: calc(100% - 25px);
     left: 14px;
     position: absolute;
 }
@@ -135,7 +136,6 @@ section {
 .timeline-item {
     margin: 0 0 50px 50px;
 }
-
 
 /* ##### Ability ##### */
 
@@ -162,36 +162,50 @@ section {
 
 .left-block {
     max-width: 400px;
-    min-width: 250px
+    min-width: 250px;
 }
 
 .right-block {
     max-width: 400px;
-    min-width: 250px
+    min-width: 250px;
 }
 
 /* ##### Project ##### */
 
 #project {
-    background-color: #EFEFEF;
+    background-color: #efefef;
 }
 
 .project-item {
     margin: 30px 0;
 }
 
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background-color: #11999e;
+    border-radius: 5px;
+    color: white;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+}
+
 /* ##### Contact ##### */
 
 #contacts {
-    background-color: #303030;;
+    background-color: #303030;
 }
 
-#contacts a, #contacts hr {
+#contacts a,
+#contacts hr {
     color: #999999;
 }
 
 #contacts a:hover {
-    color: #EFEFEF;
+    color: #efefef;
 }
 
 .contact-item {
