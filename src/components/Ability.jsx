@@ -91,18 +91,13 @@ function AbilityBlock(props) {
 function AbilityItem(props) {
     let count = props.item.proficiency;
     return (
-        <li>
+        <li className="ability-item">
             <span className="ability-name">{props.item.name}</span>
             <span className="ability-proficiency">{getStars(count)}</span>
         </li>
     );
 }
-/*
-function getStar(count) {
-    if (count-- > 0) return <StarIcon fill="#11999E" />;
-    else return <StarIcon fill="#DDDDDD" />;
-}
-*/
+
 function getStars(count) {
     let stars = [];
     for (let i = 0; i < 5; i++)

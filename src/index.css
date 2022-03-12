@@ -64,7 +64,7 @@ section {
 
 .button {
     background-color: var(--buttonPrimary);
-    border-radius: 7%;
+    border-radius: 5px;
     border: 1px solid var(--buttonPrimary);
     color: var(--buttonSecondary);
     padding: 7px;
@@ -75,7 +75,7 @@ section {
 }
 
 .button:hover {
-    background-color: var(--buttonSecondary);
+    background-color: transparent;
     color: var(--buttonPrimary);
 }
 
@@ -91,7 +91,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
-    z-index: -1;
 }
 
 #header h1 {
@@ -110,8 +109,67 @@ section {
     text-align: left;
 }
 
-/* ##### Education and Experience ##### */
+/* ##### Education ##### */
 
+#education {
+    background-color: var(--background2);
+}
+
+#education li.inner-list {
+    list-style-type: disc;
+}
+
+#education li.outer-list {
+    list-style-type: none;
+}
+
+#education ul.outer-list {
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    font-weight: 600;
+    color: var(--date);
+}
+
+.dot {
+    background-color: var(--highlightPrimary);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    left: 0px;
+}
+
+.edu-container {
+    width: 95%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.timeline {
+    background-color: var(--highlightPrimary);
+    width: 3px;
+    margin-top: 25px;
+    height: 100%;
+    height: calc(100% - 25px);
+    left: 14px;
+    position: absolute;
+}
+
+.timeline-icon {
+    margin-top: 6px;
+    color: var(--highlightSecondary);
+}
+
+.timeline-item {
+    margin: 0 0 50px 50px;
+}
+
+/* ##### Experience ##### */
+/*
 #experience {
     background-color: var(--background2);
 }
@@ -168,6 +226,7 @@ section {
 .timeline-item {
     margin: 0 0 50px 50px;
 }
+*/
 
 /* ##### Ability ##### */
 
@@ -194,6 +253,10 @@ section {
 
 .ability-proficiency {
     float: right;
+}
+
+.ability-item {
+    cursor: default;
 }
 
 .left-block {
@@ -225,6 +288,7 @@ section {
     background-color: var(--highlightPrimary);
     border-radius: 5px;
     color: var(--highlightSecondary);
+    cursor: default;
     margin: 5px 10px 5px 0;
     padding: 5px;
 }
@@ -242,6 +306,20 @@ section {
 
 #contacts a:hover {
     color: var(--footerIconHighlight);
+}
+
+.footer-icons-container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-icons-container i {
+    transition: font-size 200ms;
+}
+.footer-icons-container i:hover {
+    font-size: 3rem;
 }
 
 .contact-item {

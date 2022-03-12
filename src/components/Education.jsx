@@ -1,33 +1,33 @@
 import React from "react";
 
-const experience = [
+const education = [
     {
         institute: "Academy Of Technology",
-        role: "B. Tech in Computer Science",
+        program: "B. Tech in Computer Science",
         content: ["Presently in 6th semester.", "Average grade of 9.71 upto 5th semester."],
         start: "July 2019",
         end: "Present"
     },
     {
         institute: "Julien Day School, Kalyani",
-        role: "School (ICSE and ISC)",
+        program: "School (ICSE and ISC)",
         content: ["Completed ISC with 89.0% marks.", "Completed ICSE with 88.0% marks."],
         start: "May 2007",
         end: "May 2019"
     }
 ];
 
-function Experience() {
+function Education() {
     return (
-        <section id="experience">
+        <section id="education">
             <div className="display">
-                <h2>Experience</h2>
+                <h2>Education</h2>
                 <hr />
-                <div className="exp-container">
+                <div className="edu-container">
                     <span className="timeline"></span>
                     <ul className="outer-list">
-                        {experience.map((item, index) => (
-                            <ExperienceItem key={index} item={item} />
+                        {education.map((item, index) => (
+                            <EducationItem key={index} item={item} />
                         ))}
                     </ul>
                 </div>
@@ -36,12 +36,12 @@ function Experience() {
     );
 }
 
-function ExperienceItem(props) {
+function EducationItem(props) {
     return (
         <li className="outer-list">
             <div className="timeline-item">
                 <div className="dot">
-                    <i className="fas fa-briefcase timeline-icon"></i>
+                    <i className="fas fa-graduation-cap timeline-icon"></i>
                 </div>
                 <div className="date">
                     <p>
@@ -51,7 +51,7 @@ function ExperienceItem(props) {
 
                 <div className="content">
                     <h4>
-                        {props.item.role} - {props.item.institute}
+                        {props.item.program} - {props.item.institute}
                     </h4>
                     <ul className="inner-list">
                         {props.item.content.map((text, index) => (
@@ -66,4 +66,4 @@ function ExperienceItem(props) {
     );
 }
 
-export default Experience;
+export default Education;
