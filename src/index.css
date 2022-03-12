@@ -1,3 +1,19 @@
+:root {
+    --title: #000000;
+    --heading: #66bfbf;
+    --subHeading: #11999e;
+    --highlightPrimary: #11999e;
+    --highlightSecondary: #ffffff;
+    --background1: #ffffff;
+    --background2: #efefef;
+    --buttonPrimary: #11999e;
+    --buttonSecondary: #ffffff;
+    --date: grey;
+    --footerBackground: #303030;
+    --footerIcon: #999999;
+    --footerIconHighlight: #efefef;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +24,17 @@ body {
     font-weight: 300;
 }
 
-a,
-a:hover {
-    color: #11999e;
+a {
+    color: var(--highlightPrimary);
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlightPrimary);
 }
 
 b {
@@ -19,7 +42,7 @@ b {
 }
 
 h2 {
-    color: #66bfbf;
+    color: var(--heading);
     font-size: 3rem;
     font-weight: 300;
     line-height: 3.5rem;
@@ -28,7 +51,7 @@ h2 {
 }
 
 h3 {
-    color: #11999e;
+    color: var(--subHeading);
     text-align: left;
     margin: 20px 0;
     font-size: 1.7rem;
@@ -39,13 +62,21 @@ section {
     padding: 15px 0 30px 0;
 }
 
-.button,
-.button:hover {
-    background-color: #11999e;
+.button {
+    background-color: var(--buttonPrimary);
     border-radius: 7%;
-    border: 1px solid #11999e;
-    color: #ffffff;
+    border: 1px solid var(--buttonPrimary);
+    color: var(--buttonSecondary);
     padding: 7px;
+}
+
+.button:focus {
+    box-shadow: none;
+}
+
+.button:hover {
+    background-color: var(--buttonSecondary);
+    color: var(--buttonPrimary);
 }
 
 .display {
@@ -60,17 +91,18 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
+    z-index: -1;
 }
 
 #header h1 {
-    color: #000000;
+    color: var(--title);
     font-size: 4rem;
     font-weight: 400;
     margin-left: 10%;
 }
 
 #header h2 {
-    color: #000000;
+    color: var(--title);
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -81,7 +113,7 @@ section {
 /* ##### Education and Experience ##### */
 
 #experience {
-    background-color: #efefef;
+    background-color: var(--background2);
 }
 
 #experience li.inner-list {
@@ -99,11 +131,11 @@ section {
 
 .date {
     font-weight: 600;
-    color: grey;
+    color: var(--date);
 }
 
 .dot {
-    background-color: #11999e;
+    background-color: var(--highlightPrimary);
     position: absolute;
     width: 30px;
     height: 30px;
@@ -119,7 +151,7 @@ section {
 }
 
 .timeline {
-    background-color: #11999e;
+    background-color: var(--highlightPrimary);
     width: 3px;
     margin-top: 25px;
     height: 100%;
@@ -130,7 +162,7 @@ section {
 
 .timeline-icon {
     margin-top: 6px;
-    color: white;
+    color: var(--highlightSecondary);
 }
 
 .timeline-item {
@@ -138,6 +170,10 @@ section {
 }
 
 /* ##### Ability ##### */
+
+#ability {
+    background-color: var(--background1);
+}
 
 #ability li {
     list-style-type: none;
@@ -173,7 +209,7 @@ section {
 /* ##### Project ##### */
 
 #project {
-    background-color: #efefef;
+    background-color: var(--background2);
 }
 
 .project-item {
@@ -186,9 +222,9 @@ section {
 }
 
 .tech {
-    background-color: #11999e;
+    background-color: var(--highlightPrimary);
     border-radius: 5px;
-    color: white;
+    color: var(--highlightSecondary);
     margin: 5px 10px 5px 0;
     padding: 5px;
 }
@@ -196,16 +232,16 @@ section {
 /* ##### Contact ##### */
 
 #contacts {
-    background-color: #303030;
+    background-color: var(--footerBackground);
 }
 
 #contacts a,
 #contacts hr {
-    color: #999999;
+    color: var(--footerIcon);
 }
 
 #contacts a:hover {
-    color: #efefef;
+    color: var(--footerIconHighlight);
 }
 
 .contact-item {
