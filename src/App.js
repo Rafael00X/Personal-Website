@@ -7,16 +7,16 @@ import Contact from "./components/Contact";
 import Education from "./components/Education";
 
 function App() {
-    return (
-        <div>
-            <Header />
-            <Profile />
-            <Education />
-            <Ability />
-            <Project />
-            <Contact />
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <Profile />
+      <Education />
+      <Ability />
+      <Project />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;

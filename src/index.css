@@ -65,8 +65,8 @@ section {
 .button {
     background-color: var(--buttonPrimary);
     border-radius: 5px;
-    border: 1px solid var(--buttonPrimary);
-    color: var(--buttonSecondary);
+    border: 1px solid var(--buttonPrimary) !important;
+    color: var(--buttonSecondary) !important;
     padding: 7px;
 }
 
@@ -76,7 +76,7 @@ section {
 
 .button:hover {
     background-color: transparent;
-    color: var(--buttonPrimary);
+    color: var(--buttonPrimary) !important;
 }
 
 .display {
@@ -257,6 +257,7 @@ section {
 
 .ability-item {
     cursor: default;
+    padding: 5px;
 }
 
 .left-block {
