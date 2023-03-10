@@ -87,7 +87,8 @@ section {
 /* ##### Header ##### */
 
 #header {
-    background-image: url("./images/header-image-sm.jpg");
+    background-image: url("./images/background-image.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -352,9 +353,6 @@ section {
 }
 
 @media only screen and (min-width: 500px) {
-    #header {
-        background-image: url("./images/header-image.jpg");
-    }
 
     .display {
         width: 450px;
