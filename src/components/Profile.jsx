@@ -8,12 +8,12 @@ function Profile() {
         <hr />
         <h3>About Me</h3>
         <p>
-          I'm a college student looking for employment opportunities. I am a
-          passionate programmer with experience in full-stack web development. I
-          can effectively self-manage during independent projects, as well as
-          collaborate as part of a team. I like trying new things that can add
-          value to my work and upgrade my skill set. I am willing to bring forth
-          a motivated attitude and a variety of skills.
+          I'm a college student looking to build a successful career and have
+          fun. I am passionate about programming with experience in full-stack
+          web development. I can effectively self-manage during independent
+          projects, as well as collaborate as part of a team. I like trying new
+          things that can add value to my work and upgrade my skill set. I am
+          willing to bring forth a motivated attitude and a variety of skills.
         </p>
         <hr />
         <h3>Details</h3>
