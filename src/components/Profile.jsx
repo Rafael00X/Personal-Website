@@ -8,8 +8,8 @@ function Profile() {
         <hr />
         <h3>About Me</h3>
         <p>
-          I'm a college student looking to build a successful career and have
-          fun. I am passionate about programming with experience in full-stack
+          I'm an aspiring looking to build a successful career. I am passionate 
+          about programming with experience in full-stack
           web development. I can effectively self-manage during independent
           projects, as well as collaborate as part of a team. I like trying new
           things that can add value to my work and upgrade my skill set. I am
@@ -38,7 +38,7 @@ function Profile() {
         </p>
         <a
           className="button btn"
-          href="https://rafael00x.github.io/resume/"
+          href="https://rafael00x.github.io/LaTeX-Resume/"
           target="resume"
         >
           Resume
