@@ -2,29 +2,35 @@ import React from "react";
 
 const experience = [
   {
-    institute: "Academy Of Technology",
-    role: "B. Tech in Computer Science",
+    institute: "Cognizant Technology Solutions",
+    role: "Java Full Stack Engineer Intern",
     content: [
-      "Presently in 6th semester.",
-      "Average grade of 9.71 upto 5th semester.",
+      "Worked on full-stack web application",
+      "Developed responsive and user friendly UI using React",
+      "Developed scalable server application using Spring Boot",
+      "Learned about designing microservice architecture",
     ],
-    start: "July 2019",
-    end: "Present",
-  },
-  {
-    institute: "Julien Day School, Kalyani",
-    role: "School (ICSE and ISC)",
-    content: [
-      "Completed ISC with 89.0% marks.",
-      "Completed ICSE with 88.0% marks.",
-    ],
-    start: "May 2007",
-    end: "May 2019",
+    start: "March 2023",
+    end: "June 2023",
   },
 ];
 
 function Experience() {
   return (
+    // <section id="experience">
+    //   <div className="display">
+    //     <h2>Experience</h2>
+    //     <hr />
+    //     <div className="exp-container">
+    //       <span className="timeline"></span>
+    //       <ul className="outer-list">
+    //         {experience.map((item, index) => (
+    //           <ExperienceItem key={index} item={item} />
+    //         ))}
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </section>
     <section id="experience">
       <div className="display">
         <h2>Experience</h2>

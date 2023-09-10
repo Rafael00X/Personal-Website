@@ -11,12 +11,12 @@ function Contact() {
           >
             <i className="fab fa-linkedin fa-icon"></i>
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/subhadeep.chakraborty.37669/"
             target="_blank"
           >
             <i className="fab fa-facebook-square fa-icon"></i>
-          </a>
+          </a> */}
           <a href="https://github.com/Rafael00X" target="_blank">
             <i className="fab fa-github-square fa-icon"></i>
           </a>

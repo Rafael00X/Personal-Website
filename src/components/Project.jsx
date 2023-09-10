@@ -21,7 +21,7 @@ const projects = [
       "Maven",
       "JUnit",
     ],
-    link: "https://github.com/Rafael00X/Ecommerce-Frontend.git",
+    link: "https://github.com/Rafael00X/E-Commerce",
   },
 ];
 

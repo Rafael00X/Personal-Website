@@ -8,9 +8,9 @@ function Profile() {
         <hr />
         <h3>About Me</h3>
         <p>
-          I'm an aspiring developer looking to build a successful career. 
-          I am passionate about programming with experience in full-stack
-          web development. I can effectively self-manage during independent
+          I'm an aspiring developer looking to build a successful career. I am
+          passionate about programming with experience in full-stack web
+          development. I can effectively self-manage during independent
           projects, as well as collaborate as part of a team. I like trying new
           things that can add value to my work and upgrade my skill set. I am
           willing to bring forth a motivated attitude and a variety of skills.
@@ -23,7 +23,7 @@ function Profile() {
           </span>
           <br />
           <span>
-            <b>Profession:</b>&nbsp;&nbsp; Student
+            <b>Profession:</b>&nbsp;&nbsp; Software Developer
           </span>
           <br />
           <span>

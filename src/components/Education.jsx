@@ -3,23 +3,27 @@ import React from "react";
 const education = [
   {
     institute: "Academy Of Technology",
-    program: "B. Tech in Computer Science",
+    program: "Bachelor of Technology",
     content: [
-      "Presently in 8th semester.",
-      "Average grade of 9 cgpa upto 7th semester.",
+      "Major in Computer Science and Engineering",
+      "Completed with 9.46 CGPA",
     ],
     start: "July 2019",
-    end: "Present",
+    end: "July 2023",
   },
   {
     institute: "Julien Day School, Kalyani",
-    program: "School (ICSE and ISC)",
-    content: [
-      "Completed ISC with 87% marks.",
-      "Completed ICSE with 85% marks.",
-    ],
-    start: "May 2007",
+    program: "Class 12 (CISCE)",
+    content: ["Major in Computer Science", "Completed with 87% aggregate"],
+    start: "May 2018",
     end: "May 2019",
+  },
+  {
+    institute: "Julien Day School, Kalyani",
+    program: "Class 10 (CISCE)",
+    content: ["Major in Science", "Completed ICSE with 85% aggregate"],
+    start: "May 2016",
+    end: "May 2017",
   },
 ];
 

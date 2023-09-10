@@ -1,380 +1,382 @@
 :root {
-    --title: #000000;
-    --heading: #66bfbf;
-    --subHeading: #11999e;
-    --highlightPrimary: #11999e;
-    --highlightSecondary: #ffffff;
-    --background1: #ffffff;
-    --background2: #efefef;
-    --buttonPrimary: #11999e;
-    --buttonSecondary: #ffffff;
-    --date: grey;
-    --footerBackground: #303030;
-    --footerIcon: #999999;
-    --footerIconHighlight: #efefef;
+  --title: #000000;
+  --heading: #66bfbf;
+  --subHeading: #11999e;
+  --highlightPrimary: #11999e;
+  --highlightSecondary: #ffffff;
+  --background1: #ffffff;
+  --background2: #efefef;
+  --buttonPrimary: #11999e;
+  --buttonSecondary: #ffffff;
+  --date: grey;
+  --footerBackground: #303030;
+  --footerIcon: #999999;
+  --footerIconHighlight: #efefef;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 300;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
 }
 
 a {
-    color: var(--highlightPrimary);
-    display: block;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
-    text-decoration: none;
+  color: var(--highlightPrimary);
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--highlightPrimary);
+  color: var(--highlightPrimary);
 }
 
 b {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 h2 {
-    color: var(--heading);
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 3.5rem;
-    margin: 80px;
-    text-align: center;
+  color: var(--heading);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin: 80px;
+  text-align: center;
 }
 
 h3 {
-    color: var(--subHeading);
-    text-align: left;
-    margin: 20px 0;
-    font-size: 1.7rem;
-    font-weight: 300;
+  color: var(--subHeading);
+  text-align: left;
+  margin: 20px 0;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+hr {
+  margin: 0;
 }
 
 section {
-    padding: 15px 0 30px 0;
+  padding: 15px 0 30px 0;
 }
 
 .button {
-    background-color: var(--buttonPrimary);
-    border-radius: 5px;
-    border: 1px solid var(--buttonPrimary) !important;
-    color: var(--buttonSecondary) !important;
-    padding: 7px;
+  background-color: var(--buttonPrimary);
+  border-radius: 5px;
+  border: 1px solid var(--buttonPrimary) !important;
+  color: var(--buttonSecondary) !important;
+  padding: 7px;
 }
 
 .button:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .button:hover {
-    background-color: transparent;
-    color: var(--buttonPrimary) !important;
+  background-color: transparent;
+  color: var(--buttonPrimary) !important;
 }
 
 .display {
-    margin: auto;
-    width: 90%;
+  margin: auto;
+  width: 90%;
 }
 
 /* ##### Header ##### */
 
 #header {
-    background-image: url("./images/background-image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+  background-image: url("./images/background-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
 }
 
 #header h1 {
-    color: var(--title);
-    font-size: 4rem;
-    font-weight: 400;
-    margin-left: 10%;
+  color: var(--title);
+  font-size: 4rem;
+  font-weight: 400;
+  margin-left: 10%;
 }
 
 #header h2 {
-    color: var(--title);
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    margin: 0 0 0 10%;
-    text-align: left;
+  color: var(--title);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0 0 0 10%;
+  text-align: left;
 }
 
 /* ##### Education ##### */
 
 #education {
-    background-color: var(--background2);
+  background-color: var(--background2);
 }
 
 #education li.inner-list {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 #education li.outer-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #education ul.outer-list {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .date {
-    font-weight: 600;
-    color: var(--date);
+  font-weight: 600;
+  color: var(--date);
 }
 
 .dot {
-    background-color: var(--highlightPrimary);
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    left: 0px;
+  background-color: var(--highlightPrimary);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  left: 0px;
 }
 
 .edu-container {
-    width: 95%;
-    margin: 30px 0;
-    position: relative;
+  width: 95%;
+  margin: 30px 0;
+  position: relative;
 }
 
 .timeline {
-    background-color: var(--highlightPrimary);
-    width: 3px;
-    margin-top: 25px;
-    height: 100%;
-    height: calc(100% - 25px);
-    left: 14px;
-    position: absolute;
+  background-color: var(--highlightPrimary);
+  width: 3px;
+  margin-top: 25px;
+  height: 100%;
+  height: calc(100% - 25px);
+  left: 14px;
+  position: absolute;
 }
 
 .timeline-icon {
-    margin-top: 6px;
-    color: var(--highlightSecondary);
+  margin-top: 6px;
+  color: var(--highlightSecondary);
 }
 
 .timeline-item {
-    margin: 0 0 50px 50px;
+  margin: 0 0 50px 50px;
 }
 
 /* ##### Experience ##### */
-/*
+
 #experience {
-    background-color: var(--background2);
+  background-color: var(--background2);
 }
 
 #experience li.inner-list {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 #experience li.outer-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #experience ul.outer-list {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .date {
-    font-weight: 600;
-    color: var(--date);
+  font-weight: 600;
+  color: var(--date);
 }
 
 .dot {
-    background-color: var(--highlightPrimary);
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    left: 0px;
+  background-color: var(--highlightPrimary);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  left: 0px;
 }
 
 .exp-container {
-    width: 95%;
-    margin: 30px 0;
-    position: relative;
+  width: 95%;
+  margin: 30px 0;
+  position: relative;
 }
 
 .timeline {
-    background-color: var(--highlightPrimary);
-    width: 3px;
-    margin-top: 25px;
-    height: 100%;
-    height: calc(100% - 25px);
-    left: 14px;
-    position: absolute;
+  background-color: var(--highlightPrimary);
+  width: 3px;
+  margin-top: 25px;
+  height: 100%;
+  height: calc(100% - 25px);
+  left: 14px;
+  position: absolute;
 }
 
 .timeline-icon {
-    margin-top: 6px;
-    color: var(--highlightSecondary);
+  margin-top: 6px;
+  color: var(--highlightSecondary);
 }
 
 .timeline-item {
-    margin: 0 0 50px 50px;
+  margin: 0 0 50px 50px;
 }
-*/
 
 /* ##### Ability ##### */
 
 #ability {
-    background-color: var(--background1);
+  background-color: var(--background1);
 }
 
 #ability li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #ability li::before {
-    content: "\200B";
+  content: "\200B";
 }
 
 #ability ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .ability-name {
-    float: left;
+  float: left;
 }
 
 .ability-proficiency {
-    float: right;
+  float: right;
 }
 
 .ability-item {
-    cursor: default;
-    padding: 5px;
+  cursor: default;
+  padding: 5px;
 }
 
 .left-block {
-    max-width: 400px;
-    min-width: 250px;
+  max-width: 400px;
+  min-width: 250px;
 }
 
 .right-block {
-    max-width: 400px;
-    min-width: 250px;
+  max-width: 400px;
+  min-width: 250px;
 }
 
 /* ##### Project ##### */
 
 #project {
-    background-color: var(--background2);
+  background-color: var(--background2);
 }
 
 .project-item {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .tech-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tech {
-    background-color: var(--highlightPrimary);
-    border-radius: 5px;
-    color: var(--highlightSecondary);
-    cursor: default;
-    margin: 5px 10px 5px 0;
-    padding: 5px;
+  background-color: var(--highlightPrimary);
+  border-radius: 5px;
+  color: var(--highlightSecondary);
+  cursor: default;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
 }
 
 /* ##### Contact ##### */
 
 #contacts {
-    background-color: var(--footerBackground);
+  background-color: var(--footerBackground);
 }
 
 #contacts a,
 #contacts hr {
-    color: var(--footerIcon);
+  color: var(--footerIcon);
 }
 
 #contacts a:hover {
-    color: var(--footerIconHighlight);
+  color: var(--footerIconHighlight);
 }
 
 .footer-icons-container {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-icons-container i {
-    transition: font-size 200ms;
+  transition: font-size 200ms;
 }
 .footer-icons-container i:hover {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .contact-item {
-    margin: 30px 0;
-    text-align: center;
+  margin: 30px 0;
+  text-align: center;
 }
 
 .fa-icon {
-    font-size: 2rem;
-    height: 35px;
-    width: 35px;
-    text-align: center;
+  font-size: 2rem;
+  height: 35px;
+  width: 35px;
+  text-align: center;
 }
 
 /* ##### Media Queries ##### */
 
 @media only screen and (max-width: 375px) {
-    #header h1 {
-        font-size: 3rem;
-    }
+  #header h1 {
+    font-size: 3rem;
+  }
 
-    #header h2 {
-        font-size: 1.5rem;
-    }
+  #header h2 {
+    font-size: 1.5rem;
+  }
 
-    h2 {
-        margin: 80px 0;
-    }
+  h2 {
+    margin: 80px 0;
+  }
 }
 
 @media only screen and (min-width: 500px) {
-
-    .display {
-        width: 450px;
-    }
+  .display {
+    width: 450px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .display {
-        width: 600px;
-    }
+  .display {
+    width: 600px;
+  }
 
-    .right-block {
-        margin: 0 auto;
-    }
+  .right-block {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    .display {
-        width: 850px;
-    }
+  .display {
+    width: 850px;
+  }
 
-    .right-block {
-        margin: 0 auto;
-    }
+  .right-block {
+    margin: 0 auto;
+  }
 }
