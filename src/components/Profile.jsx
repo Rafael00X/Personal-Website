@@ -27,7 +27,7 @@ function Profile() {
           </span>
           <br />
           <span>
-            <b>Location:</b>&nbsp;&nbsp; Gayeshpur, West Bengal, India
+            <b>Location:</b>&nbsp;&nbsp; Kolkata, West Bengal, India
           </span>
           <br />
           <span>
@@ -38,7 +38,7 @@ function Profile() {
         </p>
         <a
           className="button btn"
-          href="https://rafael00x.github.io/LaTeX-Resume/"
+          href="/resume.pdf"
           target="resume"
         >
           Resume

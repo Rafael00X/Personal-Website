@@ -2,8 +2,20 @@ import React from "react";
 
 const experience = [
   {
+    institute: "Tata Consultancy Services",
+    role: "Java Full-Stack Developer",
+    content: [
+      "Worked on distributed systems",
+      "Developed a distributed system for a monolith application to handle heavy workloads",
+      "Developed supporting microservices to supplement a monolith system with additional functionalities",
+      "Learned about deployment, CI/CD, cloud services (Azure)",
+    ],
+    start: "October 2023",
+    end: "Present",
+  },
+  {
     institute: "Cognizant Technology Solutions",
-    role: "Java Full Stack Engineer Intern",
+    role: "Java Full-Stack Engineer Intern",
     content: [
       "Worked on full-stack web application",
       "Developed responsive and user friendly UI using React",
@@ -13,6 +25,7 @@ const experience = [
     start: "March 2023",
     end: "June 2023",
   },
+  
 ];
 
 function Experience() {
