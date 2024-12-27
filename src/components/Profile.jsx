@@ -1,4 +1,9 @@
 import React from "react";
+import Pdf from "../documents/resume.pdf";
+
+function onResumeClick() {
+  window.open(Pdf);
+}
 
 function Profile() {
   return (
@@ -38,8 +43,9 @@ function Profile() {
         </p>
         <a
           className="button btn"
-          href="/resume.pdf"
-          target="resume"
+          onClick={onResumeClick}
+          // href={Pdf}
+          // target="resume"
         >
           Resume
         </a>
